@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Bills | Droplet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/img/fs.jpg" rel="icon" />
+    <link href="/css/front-page.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monda&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e8ccebb2f4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="header">
+        <nav>
+          <ul id="nav-ul">
+            <li>
+              <a href="/dashboard"><label class="logo">Droplet</label></a>
+            </li>
+            <li>
+              <a class="nav-link" href="/dashboard" 
+                >dashboard</a
+              >
+            </li>
+            <li><a class="nav-link" href="/bills" style="text-decoration: underline">bills</a></li>
+            <li><a class="nav-link" href="/submit">submit</a></li>
+            <li><a class="nav-link" id="login" href="/api/logout">logout</a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+    <div id="container">
+      <% if(bills.length===0) {%>
+      <p id="no-bets">No bills to show</p>
+      <% } %>
+
+      <div class="post">
+        <ul class="overall-list">
+          <% for(let i=bills.length-1; i>=0; i--) {%>
+          <li class="individual-post-bills">
+            <p class="post-link">
+              Balance Due: <%= bills[i].cost %> RWF
+          
+                <div class="faded-domain"
+                >Current Reading: <%= bills[i].currentReading %> &#13221;
+                </div>
+
+                <div class="faded-domain"
+                >Previous Reading: <%= bills[i].previousReading %> &#13221;
+                </div>
+
+                <div class="faded-domain"
+                >Water Consumption: <%= bills[i].consumption %> &#13221;
+                </div>
+
+                <div class="faded-domain"
+                >Date Created: <%= moment(parseInt(bills[i].timeCreated)).format('LL') %>
+                </div>
+
+                <p class="profile-info" class="view-bills"><a 
+                  href="single-bill/<%= bills[i]._id%>" 
+                  style=" color: purple;"
+                  >
+                  View Bill &#8594;</a></p>
+
+           
+          </li>
+
+          <% } %>
+        </ul>
+      </div>
+    </div>
+
+    <br>
+
+    <footer class="footer">
+      <ul id="footer-ul">
+        <li><a class="nav-link" href="/contact">contact</a></li>
+      </ul>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+ 
+</html>

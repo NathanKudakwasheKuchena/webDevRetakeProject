@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/img/fs.jpg" rel="icon">
+    <link href="/css/submit.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="header__title">Droplet</h1>
+            <h2 class="header__subtitle">Contact Us</h2>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="actions__container actions__container--spaced">
+            <a href="/dashboard">Dashboard</a>
+            <span id="last-edited"></span>
+        </div>
+    </div>
+    <form class="container" action="/api/messages" method="POST" id="create-post-form">
+        <input id="note-title" class="name-input" placeholder="your name" name="name" maxlength="100" autofocus
+            required>
+        <input id="note-title" class="name-input" placeholder="email" type="email" name="customEmail" required>
+        <textarea id="note-body" class="body-input" placeholder="your message" name="body" required></textarea>
+        <input type="submit" value="Send" id="submit" />
+    </form>
+    <br>
+
+
+    <footer class="footer">
+        <ul id="footer-ul">
+            <li><a class="nav-link" href="/contact">contact</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,376 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+   }
+  
+  html {
+    font-size: 62.5%; }
+  
+  body {
+    font-family: 'Josefin Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 0px; 
+    box-sizing: border-box;
+  }
+  
+  
+  nav{
+    background-image: linear-gradient(to right, #5e0247, #aa0b82);
+    height: 75px;
+    width: 100%;
+  }
+  label.logo{
+    color: white;
+    font-size: 4vmin;
+    line-height: 80px;
+    padding: 0 30px;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+  }
+  
+  label.logo:hover{
+    background-image: linear-gradient(to right, #abbd0a, #ffffff,  #3edae6);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  nav ul{
+    float: right;
+    margin-right: 40px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 1px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 3vmin;
+    padding: 7px 13px;
+    border-radius: 3px;
+  }
+  nav ul li a.active, nav ul li a:hover{
+    text-decoration: underline;
+    transition: .01s;
+  }
+  
+  nav a label:hover{
+    cursor: pointer;
+  }
+  
+  .unstyled:hover{
+    cursor: pointer;
+  }
+  
+  
+  
+  @media(max-width:550px){
+    nav{
+      background-image: linear-gradient(to right, #5e0247, #aa0b82);
+      height: 75px;
+      width: 100%;
+    }
+    label.logo{
+      color: white;
+      font-size: 20px;
+      line-height: 80px;
+      padding: 0 30px;
+      font-weight: bold;
+      letter-spacing: 0.3rem;
+    }
+    nav ul{
+      float: right;
+      margin-right: 20px;
+    }
+    nav ul li{
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 1px;
+    }
+    nav ul li a{
+      color: white;
+      font-size: 1.1rem;
+      padding: 7px 13px;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+    nav ul li a.active, nav ul li a:hover{
+      text-decoration: underline;
+      transition: .01s;
+    }
+    
+    nav a label:hover{
+      cursor: pointer;
+    }
+    
+    .unstyled:hover{
+      cursor: pointer;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  @media(min-width:281px) and (max-width:320px){
+    nav{
+      background-image: linear-gradient(to right, #5e0247, #aa0b82);
+      height: 140px;
+      width: 100%;
+    }
+    label.logo{
+      color: white;
+      font-size: 20px;
+      line-height: 80px;
+      padding: 0 30px;
+      font-weight: bold;
+      letter-spacing: 0.3rem;
+    }
+    nav ul{
+      float: right;
+      margin-right: 160px;
+    }
+    nav ul li{
+      display: inline-block;
+      line-height: 20px;
+      margin: 0 1px;
+    }
+    nav ul li a{
+      color: white;
+      font-size: 1.1rem;
+      padding: 7px 13px;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+    nav ul li a.active, nav ul li a:hover{
+      text-decoration: underline;
+      transition: .01s;
+    }
+    
+    nav a label:hover{
+      cursor: pointer;
+    }
+    
+    .unstyled:hover{
+      cursor: pointer;
+    }
+  }
+  
+  
+  
+  
+  
+  @media(min-width:340px) and (max-width:375px){
+    nav{
+      background-image: linear-gradient(to right, #5e0247, #aa0b82);
+      height: 140px;
+      width: 100%;
+    }
+    label.logo{
+      color: white;
+      font-size: 20px;
+      line-height: 80px;
+      padding: 0 30px;
+      font-weight: bold;
+      letter-spacing: 0.3rem;
+    }
+    nav ul{
+      float: right;
+      margin-right: 200px;
+    }
+    nav ul li{
+      display: inline-block;
+      line-height: 20px;
+      margin: 0 1px;
+    }
+    nav ul li a{
+      color: white;
+      font-size: 1.1rem;
+      padding: 7px 13px;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+    nav ul li a.active, nav ul li a:hover{
+      text-decoration: underline;
+      transition: .01s;
+    }
+    
+    nav a label:hover{
+      cursor: pointer;
+    }
+    
+    .unstyled:hover{
+      cursor: pointer;
+    }
+  }
+  
+  
+  
+  
+  
+  @media(max-width:280px){
+    nav{
+      background-image: linear-gradient(to right, #5e0247, #aa0b82);
+      height: 145px;
+      width: 100%;
+    }
+    label.logo{
+      color: white;
+      font-size: 20px;
+      line-height: 80px;
+      padding: 0 30px;
+      font-weight: bold;
+      letter-spacing: 0.3rem;
+    }
+    nav ul{
+      float: right;
+      margin-right: 120px;
+    }
+    nav ul li{
+      display: inline-block;
+      line-height: 20px;
+      margin: 0 1px;
+    }
+    nav ul li a{
+      color: white;
+      font-size: 1.1rem;
+      padding: 7px 13px;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+    nav ul li a.active, nav ul li a:hover{
+      text-decoration: underline;
+      transition: .01s;
+    }
+    
+    nav a label:hover{
+      cursor: pointer;
+    }
+    
+    .unstyled:hover{
+      cursor: pointer;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  .heading-primary {
+    color: #fff;
+    backface-visibility: hidden;
+    margin-bottom: 60px; }
+    .heading-primary--main {
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 6.2vmin;
+      font-weight: 800;
+      letter-spacing: 20px;
+      animation-name: moveInLeft;
+      animation-duration: 2s; }
+    .heading-primary--sub {
+      margin-top: 40px;
+      display: block;
+      font-size: 3vmin;
+      font-weight: 500;
+      letter-spacing: 12px;
+      animation: moveInRight 2s; }
+  
+  
+      @media(max-width:550px){
+        .heading-primary {
+          color: #fff;
+          backface-visibility: hidden;
+          margin-bottom: 60px; }
+        .heading-primary--main {
+          display: block;
+          text-align: justify;
+          font-size: 30px;
+          font-weight: 400;
+          letter-spacing: 15px;
+          animation-name: moveInLeft;
+          animation-duration: 2s; }
+        .heading-primary--sub {
+          display: block;
+          text-align: justify;
+          font-size: 10px;
+          font-weight: 300;
+          letter-spacing: 8px;
+          animation: moveInRight 2s; }
+      }
+
+      .header {
+        height: 95vh;
+        background-image: linear-gradient(to right bottom, rgba(219, 41, 41, 0.8), rgba(160, 15, 124, 0.8), rgba(29, 157, 173, 0.8)), url(/img/water.jpg);
+        background-size: cover;
+        background-position: top;
+        position: relative;
+        
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); }
+        .header__logo-box {
+          position: absolute;
+          top: 40px;
+          left: 40px; }
+        .header__logo {
+          height: 35px; }
+        .header__text-box {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center; }
+
+          .btn:link, .btn:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 15px 40px;
+            display: inline-block;
+            transition: all 0.02s;
+            font-size: 2.8vmin;
+           }
+          
+          .btn:hover {
+            background-color: black;
+            color: #fff;
+            border: 2px solid #fff;
+           }
+          
+          .btn--white {
+            background-color: #fff;
+            color: black;
+            border: 2px solid #66013f;
+           }
+          
+          .btn--animated {
+            animation: moveInButton 2s;
+            animation-fill-mode: backwards; }
+          
+          .btn-text:link, .btn-text:visited {
+            font-size: 1.6rem;
+            color: #66013f;
+            display: inline-block;
+            text-decoration: none;
+            border-bottom: 1px solid #66013f;
+            padding: 3px;
+            transition: all 0.2s; }
+          
+          .btn-text:hover {
+            background-color: #66013f;
+            color: white;
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px); }
+          
+          .btn-text:active {
+            box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+            transform: translateY(0); }
+  
+  

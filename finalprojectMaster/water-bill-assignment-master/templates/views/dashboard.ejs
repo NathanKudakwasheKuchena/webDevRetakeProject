@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Dashboard | Droplet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/img/fs.jpg" rel="icon" />
+    <link href="/css/front-page.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monda&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e8ccebb2f4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <nav>
+        <ul id="nav-ul">
+          <li>
+            <a href="/dashboard"><label class="logo">Droplet</label></a>
+          </li>
+          <li>
+            <a class="nav-link" href="/dashboard" style="text-decoration: underline"
+              >dashboard</a
+            >
+          </li>
+          <li><a class="nav-link" href="/bills">bills</a></li>
+          <li><a class="nav-link" href="/submit">submit</a></li>
+          <li><a class="nav-link" id="login" href="/api/logout">logout</a></li>
+        </ul>
+      </nav>
+    </div>
+
+          <br>
+          <h2 style="text-align: left; margin-left: 2vw;">Your Droplet Dashboard</h2>
+          <br>
+          <div id="container">
+            <div class="post">
+              <ul class="overall-list">
+                <li class="individual-post">
+                  <p class="profile-info">first name: <%= profile[1] %></p>
+
+                  <p class="profile-info">last name: <%= profile[2] %></p>
+
+                  <p class="profile-info">email: <%= profile[0] %></p>
+
+                  <p class="profile-info">meter number: <%= profile[3] %></p>
+      
+                  <p class="profile-info" class="view-bills"><a href="/bills" 
+                    style=" color: purple;"
+                    >
+                    View Bills &#8594;</a></p>
+      
+                </li>
+              </ul>
+            </div>
+          </div>
+       
+
+    <br>
+
+    <footer class="footer">
+      <ul id="footer-ul">
+        <li><a class="nav-link" href="/contact">contact</a></li>
+      </ul>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  
+</html>

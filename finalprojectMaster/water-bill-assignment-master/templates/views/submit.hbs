@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Submit Meter Reading</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/img/fs.jpg" rel="icon">
+    <link href="/css/submit.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="header__title">Droplet</h1>
+            <h2 class="header__subtitle">Submit Meter Reading</h2>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="actions__container actions__container--spaced">
+            <a href="/dashboard">Dashboard</a>
+            <span id="last-edited"></span>
+        </div>
+    </div>
+    <form class="container" action="/api/bills" method="POST" id="create-post-form">
+        <input id="note-title" class="name-input" placeholder="Current Meter Reading" name="currentReading" type="number" autofocus required>
+        <input id="note-title" class="name-input" placeholder="Previous Meter Reading" name="previousReading" type="number" required>
+        <input type="submit" value="Submit" id="submit" />
+    </form>
+</body>
+
+</html>

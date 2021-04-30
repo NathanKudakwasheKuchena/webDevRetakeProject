@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign Up</title>
+    <link href="/img/fs.jpg" rel="icon">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+
+    <style type="text/css">
+        html,
+        body {
+            height: 100%;
+        }
+
+        html {
+            display: table;
+            margin: auto;
+        }
+
+        body {
+            display: table-cell;
+            vertical-align: middle;
+            background-color: rgb(161, 29, 144);
+            font-family: 'Monda', 'Courier New', Courier, monospace;
+        }
+
+        .margin {
+            margin: 0 !important;
+        }
+
+
+        .home-link {
+            color: #ffffff;
+            font-size: 3vmin;
+        }
+
+        .home-link:hover {
+            color: black;
+        }
+
+
+        /* Actions Bar */
+
+        .actions {
+            padding: .1rem
+        }
+
+        .actions__container {
+            align-items: center;
+            display: flex;
+            max-width: 60rem;
+            margin: 0 auto;
+            min-height: 3rem;
+            padding: 0.3rem 1.6rem;
+        }
+
+        .actions__container--spaced {
+            justify-content: space-between
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="actions">
+        <div class="actions__container actions__container--spaced">
+            <a class="home-link" href="/">
+                <p>&larr; Back</p>
+            </a>
+        </div>
+    </div>
+
+
+    <p style="color: rgb(255, 255, 255) ; text-align:center" id="errorText"></p>
+
+    <div id="login-page" class="row">
+        <div class="col s12 z-depth-6 card-panel">
+            <form class="login-form" action="/api/register" method="POST">
+                <div class="row">
+                    <div class="input-field col s12 center">
+                        <h5 class="center login-form-text">Droplet Sign Up Form</h5>
+                    </div>
+                </div>
+
+                <div class="row margin">
+                    <div class="input-field col s12">
+                        <i class="mdi-social-person-outline prefix"></i>
+                        <input id="username" type="text" class="validate" name="firstName" placeholder="First Name"
+                            autofocus
+                            required maxlength="15">
+                        <label for="firstName" class="center-align"></label>
+                    </div>
+                </div>
+
+                <div class="row margin">
+                    <div class="input-field col s12">
+                        <i class="mdi-social-person-outline prefix"></i>
+                        <input id="username" type="text" class="validate" name="lastName" placeholder="Last Name"
+                            autofocus
+                            required maxlength="15">
+                        <label for="lastName" class="center-align"></label>
+                    </div>
+                </div>
+
+
+                <div class="row margin">
+                    <div class="input-field col s12">
+                        <i class="mdi-social-person-outline prefix"></i>
+                        <input id="username" type="number" class="validate" name="meterNumber" placeholder="Meter Number"
+                            autofocus
+                            required maxlength="15">
+                        <label for="meterNumber" class="center-align"></label>
+                    </div>
+                </div>
+        
+                <div class="row margin">
+                    <div class="input-field col s12">
+                        <i class="mdi-communication-email prefix"></i>
+                        <input id="email" type="email" class="validate" name="email" placeholder="Email" required>
+                        <label for="email" class="center-align"></label>
+                    </div>
+                </div>
+
+                <div class="row margin">
+                    <div class="input-field col s12">
+                        <i class="mdi-action-lock-outline prefix"></i>
+                        <input id="password" type="password" class="validate" name="password" placeholder="Password"
+                            required>
+                        <label for="password"></label>
+                    </div>
+                </div>
+                <div class="row margin">
+                    <div class="input-field col s12">
+                        <i class="mdi-action-lock-outline prefix"></i>
+                        <input id="password-again" type="password" name="confirm_password"
+                            placeholder="Confirm Password" required>
+                        <label for="password-again"></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input class="btn waves-effect waves-light col s12" value="Create Account" type="submit">
+                    </div>
+                    <div class="input-field col s12">
+                        <p class="margin center medium-small sign-up">Already have an account? <a
+                                href="/login">Login</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script>
+    const errorResponse = window.location.href.split("=")[1]
+
+    if (errorResponse.length > 3) {
+        const errorText = document.getElementById("errorText");
+        errorText.innerHTML = errorResponse.replaceAll("%20", " ").replaceAll("%27", " ")
+    }
+</script>
+
+</html>

@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'Monda', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    background-color: rgb(33, 34, 34);
+    color: white;
+  }
+
+  .header{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 2vh 2vw;
+      background-color: rgb(45, 46, 46);
+  }
+
+  #nav-ul{
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 2.3vmin;
+  }
+
+  #nav-ul li{
+      padding: 2vh 1vw;
+  }
+
+  #nav-ul li .nav-link{
+    color: white
+  }
+
+  #nav-ul li .nav-link:hover{
+    color: rgb(153, 146, 146);
+  }
+
+  #nav-ul li a .logo{
+      color: white;
+      border: 1px solid rgb(255, 255, 255);
+      padding: 4px 7px;
+      font-weight: 600;
+  }
+
+  #nav-ul li a .logo:hover{
+      text-decoration: none;
+      cursor: pointer;
+  }
+
+  .faq-link:link{
+    color: blue;
+  }
+
+  .faq-link:active{
+    color: blue;
+  }
+
+  .faq-link:visited{
+    color: blue;
+  }
+
+  .faq-link{
+    font-size: 2.9vmin;
+  }
+
+  #login{
+    position: absolute;
+    right: 5vw;
+  }
+
+  #username{
+    position: absolute;
+    right: 15vw;
+  }
+
+  
+
+
+
+  .footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4vh 2vw;
+    background-color: rgb(64, 64, 66);
+}
+
+#footer-ul{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.7vmin;
+}
+
+#footer-ul li{
+    padding: 2vh 1.5vw;
+}
+
+#footer-ul li .nav-link{
+  color: rgb(206, 202, 202)
+}
+
+#footer-ul li .nav-link:hover{
+  text-decoration: underline;
+}
+
+
+#faq-heading{
+    margin: 4vh 2vw;
+}
+  
+#faq-list-ul{
+    margin: 4vh 2vw;
+}
+
+
+.faq-main-section{
+    margin: 4vh 2vw;
+}
+
+.faq-sub-heading{
+    color: rgb(158, 157, 157);
+}
+
+.faq-answer{
+    font-size: 2.7vmin;
+}
+
+
+footer{
+  position: relative;
+  top: 1vh;
+}
+

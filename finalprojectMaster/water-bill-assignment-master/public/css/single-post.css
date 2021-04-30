@@ -1,0 +1,123 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: white;
+  font-family: 'Monda', Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+a {
+    color: #396684;
+}
+
+/* Container */
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2vh 2vw;
+    background-color: rgb(85, 85, 172);
+}
+
+#nav-ul{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2.3vmin;
+}
+
+#nav-ul li{
+    padding: 2vh 1vw;
+}
+
+#nav-ul li .nav-link{
+  color: white
+}
+
+
+
+#nav-ul li a .logo{
+    color: black;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 4px;
+    font-weight: 600;
+    
+}
+
+#nav-ul li a .logo:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#login{
+  position: absolute;
+  right: 5vw;
+}
+
+#username{
+  position: absolute;
+  right: 15vw;
+}
+
+
+
+li{
+    list-style: none;
+}
+
+
+#main-section-single-post{
+    text-align: left;
+}
+
+#posts-section{
+    padding: 5vh 2vw;
+}
+
+#form-section{
+    padding: 2vh 2vw;
+}
+
+
+#comments-list-section{
+    padding: 2vh 2vw;
+}
+
+.individual-comment{
+    font-size: 2.5vmin;
+    margin: auto;
+    padding: 0.1vh 0.3vw;
+}
+
+.faded-items{
+  font-size: 1.8vmin;
+  color: rgb(122, 114, 114);
+}
+
+.individual-comment-wrapper{
+  border-bottom: 1px solid gray;
+}
+
+.faded-domain{
+  font-size: 1.8vmin;
+  color: rgb(122, 114, 114);
+}
+
+.post-title{
+  color: black;
+}
